@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "presets": [
+    {
+      "name": "잔잔한 겨울",
+      "config": {
+        "kinds": {
+          "clear": {
+            "on": true,
+            "weight": 15
+          },
+          "cloudy": {
+            "on": true,
+            "weight": 30
+          },
+          "light": {
+            "on": true,
+            "weight": 40
+          },
+          "snow": {
+            "on": true,
+            "weight": 15
+          },
+          "heavy": {
+            "on": false,
+            "weight": 12
+          },
+          "blizzard": {
+            "on": false,
+            "weight": 8
+          }
+        },
+        "vars": {
+          "kind": {
+            "auto": true
+          },
+          "duration": {
+            "auto": true,
+            "min": 120,
+            "max": 420,
+            "manual": 120
+          },
+          "snow_amount": {
+            "auto": true,
+            "min": 20,
+            "max": 260
+          },
+          "snow_size": {
+            "auto": true,
+            "min": 0.7,
+            "max": 1.3
+          },
+          "snow_speed": {
+            "auto": true,
+            "min": 0.5,
+            "max": 1.0
+          },
+          "snow_accumulate": {
+            "auto": true,
+            "min": 30,
+            "max": 70
+          },
+          "snow_accum_rate": {
+            "auto": true,
+            "min": 15,
+            "max": 50
+          },
+          "temperature": {
+            "auto": true,
+            "min": -8,
+            "max": 0
+          },
+          "wind_direction": {
+            "auto": true,
+            "min": 0,
+            "max": 359
+          },
+          "wind_strength": {
+            "auto": true,
+            "min": 0,
+            "max": 25
+          },
+          "gust_strength": {
+            "auto": true,
+            "min": 10,
+            "max": 40
+          },
+          "gust_interval": {
+            "auto": true,
+            "min": 40,
+            "max": 120
+          }
+        },
+        "change_speed": 25,
+        "change_freq": 35,
+        "randomness": 30,
+        "link": 70
+      }
+    },
+    {
+      "name": "포근한 눈 내리는 날",
+      "config": {
+        "kinds": {
+          "clear": {
+            "on": false,
+            "weight": 15
+          },
+          "cloudy": {
+            "on": true,
+            "weight": 15
+          },
+          "light": {
+            "on": true,
+            "weight": 40
+          },
+          "snow": {
+            "on": true,
+            "weight": 45
+          },
+          "heavy": {
+            "on": false,
+            "weight": 12
+          },
+          "blizzard": {
+            "on": false,
+            "weight": 8
+          }
+        },
+        "vars": {
+          "kind": {
+            "auto": true
+          },
+          "duration": {
+            "auto": true,
+            "min": 120,
+            "max": 360,
+            "manual": 120
+          },
+          "snow_amount": {
+            "auto": true,
+            "min": 80,
+            "max": 350
+          },
+          "snow_size": {
+            "auto": true,
+            "min": 1.0,
+            "max": 1.8
+          },
+          "snow_speed": {
+            "auto": true,
+            "min": 0.4,
+            "max": 0.9
+          },
+          "snow_accumulate": {
+            "auto": true,
+            "min": 30,
+            "max": 70
+          },
+          "snow_accum_rate": {
+            "auto": true,
+            "min": 25,
+            "max": 60
+          },
+          "temperature": {
+            "auto": true,
+            "min": -2,
+            "max": 4
+          },
+          "wind_direction": {
+            "auto": true,
+            "min": 0,
+            "max": 359
+          },
+          "wind_strength": {
+            "auto": true,
+            "min": 0,
+            "max": 20
+          },
+          "gust_strength": {
+            "auto": true,
+            "min": 0,
+            "max": 30
+          },
+          "gust_interval": {
+            "auto": true,
+            "min": 60,
+            "max": 150
+          }
+        },
+        "change_speed": 30,
+        "change_freq": 40,
+        "randomness": 35,
+        "link": 75
+      }
+    },
+    {
+      "name": "폭설",
+      "config": {
+        "kinds": {
+          "clear": {
+            "on": false,
+            "weight": 15
+          },
+          "cloudy": {
+            "on": false,
+            "weight": 20
+          },
+          "light": {
+            "on": false,
+            "weight": 25
+          },
+          "snow": {
+            "on": true,
+            "weight": 25
+          },
+          "heavy": {
+            "on": true,
+            "weight": 65
+          },
+          "blizzard": {
+            "on": true,
+            "weight": 10
+          }
+        },
+        "vars": {
+          "kind": {
+            "auto": true
+          },
+          "duration": {
+            "auto": true,
+            "min": 90,
+            "max": 300,
+            "manual": 120
+          },
+          "snow_amount": {
+            "auto": true,
+            "min": 500,
+            "max": 1000
+          },
+          "snow_size": {
+            "auto": true,
+            "min": 0.9,
+            "max": 1.8
+          },
+          "snow_speed": {
+            "auto": true,
+            "min": 0.8,
+            "max": 1.6
+          },
+          "snow_accumulate": {
+            "auto": true,
+            "min": 60,
+            "max": 100
+          },
+          "snow_accum_rate": {
+            "auto": true,
+            "min": 70,
+            "max": 100
+          },
+          "temperature": {
+            "auto": true,
+            "min": -12,
+            "max": -2
+          },
+          "wind_direction": {
+            "auto": true,
+            "min": 0,
+            "max": 359
+          },
+          "wind_strength": {
+            "auto": true,
+            "min": 10,
+            "max": 50
+          },
+          "gust_strength": {
+            "auto": true,
+            "min": 20,
+            "max": 60
+          },
+          "gust_interval": {
+            "auto": true,
+            "min": 25,
+            "max": 90
+          }
+        },
+        "change_speed": 45,
+        "change_freq": 50,
+        "randomness": 40,
+        "link": 80
+      }
+    },
+    {
+      "name": "강한 눈보라",
+      "config": {
+        "kinds": {
+          "clear": {
+            "on": false,
+            "weight": 15
+          },
+          "cloudy": {
+            "on": false,
+            "weight": 20
+          },
+          "light": {
+            "on": false,
+            "weight": 25
+          },
+          "snow": {
+            "on": false,
+            "weight": 20
+          },
+          "heavy": {
+            "on": true,
+            "weight": 25
+          },
+          "blizzard": {
+            "on": true,
+            "weight": 75
+          }
+        },
+        "vars": {
+          "kind": {
+            "auto": true
+          },
+          "duration": {
+            "auto": true,
+            "min": 60,
+            "max": 240,
+            "manual": 120
+          },
+          "snow_amount": {
+            "auto": true,
+            "min": 600,
+            "max": 1000
+          },
+          "snow_size": {
+            "auto": true,
+            "min": 0.8,
+            "max": 1.6
+          },
+          "snow_speed": {
+            "auto": true,
+            "min": 1.4,
+            "max": 2.6
+          },
+          "snow_accumulate": {
+            "auto": true,
+            "min": 60,
+            "max": 100
+          },
+          "snow_accum_rate": {
+            "auto": true,
+            "min": 60,
+            "max": 100
+          },
+          "temperature": {
+            "auto": true,
+            "min": -20,
+            "max": -8
+          },
+          "wind_direction": {
+            "auto": true,
+            "min": 0,
+            "max": 359
+          },
+          "wind_strength": {
+            "auto": true,
+            "min": 65,
+            "max": 100
+          },
+          "gust_strength": {
+            "auto": true,
+            "min": 60,
+            "max": 100
+          },
+          "gust_interval": {
+            "auto": true,
+            "min": 5,
+            "max": 30
+          }
+        },
+        "change_speed": 60,
+        "change_freq": 60,
+        "randomness": 45,
+        "link": 85
+      }
+    },
+    {
+      "name": "변화무쌍한 겨울",
+      "config": {
+        "kinds": {
+          "clear": {
+            "on": true,
+            "weight": 12
+          },
+          "cloudy": {
+            "on": true,
+            "weight": 15
+          },
+          "light": {
+            "on": true,
+            "weight": 20
+          },
+          "snow": {
+            "on": true,
+            "weight": 22
+          },
+          "heavy": {
+            "on": true,
+            "weight": 18
+          },
+          "blizzard": {
+            "on": true,
+            "weight": 13
+          }
+        },
+        "vars": {
+          "kind": {
+            "auto": true
+          },
+          "duration": {
+            "auto": true,
+            "min": 30,
+            "max": 120,
+            "manual": 120
+          },
+          "snow_amount": {
+            "auto": true,
+            "min": 0,
+            "max": 900
+          },
+          "snow_size": {
+            "auto": true,
+            "min": 0.6,
+            "max": 2.0
+          },
+          "snow_speed": {
+            "auto": true,
+            "min": 0.4,
+            "max": 2.2
+          },
+          "snow_accumulate": {
+            "auto": true,
+            "min": 10,
+            "max": 100
+          },
+          "snow_accum_rate": {
+            "auto": true,
+            "min": 10,
+            "max": 100
+          },
+          "temperature": {
+            "auto": true,
+            "min": -16,
+            "max": 6
+          },
+          "wind_direction": {
+            "auto": true,
+            "min": 0,
+            "max": 359
+          },
+          "wind_strength": {
+            "auto": true,
+            "min": 0,
+            "max": 90
+          },
+          "gust_strength": {
+            "auto": true,
+            "min": 10,
+            "max": 100
+          },
+          "gust_interval": {
+            "auto": true,
+            "min": 10,
+            "max": 90
+          }
+        },
+        "change_speed": 70,
+        "change_freq": 75,
+        "randomness": 85,
+        "link": 55
+      }
+    }
+  ]
+}

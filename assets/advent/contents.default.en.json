@@ -1,0 +1,415 @@
+{
+ "version": 1,
+ "title": "Christmas Advent Calendar",
+ "_comment": "이 파일을 수정해 선물 내용을 바꿀 수 있습니다. animation: snowfall|confetti|stars|lights|fireworks|sparkle / event.type: quiz|wish|catch|none / image: 이 파일 기준 상대 경로(또는 절대 경로)",
+ "days": [
+  {
+   "day": 1,
+   "title": "The Day of the First Snow",
+   "message": "You opened the first door of December. From today, excitement builds up day by day.",
+   "story": "High above, on a very tall cloud, a single snowflake quietly opened its eyes. 'Today is the day I get to go down.' It rode the wind, dancing slowly, very slowly, and softly landed on the palm of a child sitting by a window.",
+   "image": "images/day01.png",
+   "animation": "snowfall",
+   "event": {
+    "type": "wish",
+    "prompt": "Write down the wish you most want to come true this year, in one line.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 2,
+   "title": "Catching Sparkling Stars",
+   "message": "The night sky shared a few stars with you today.",
+   "story": "They say that around Christmas the sky lets a few stars fall. Whoever picks one up dreams the warmest dream that night. Today, you are the star collector.",
+   "image": "images/day02.png",
+   "animation": "stars",
+   "event": {
+    "type": "catch",
+    "item": "star",
+    "target": 5,
+    "seconds": 12,
+    "prompt": "Click the 5 falling stars to pick them up!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 3,
+   "title": "The Secret of the Tree",
+   "message": "The tree's lights are little lighthouses guarding the winter night.",
+   "story": "Long ago, people brought evergreen trees indoors in winter to share the belief that spring would return. Decorating a tree today is also a way of hanging hope in the dark season.",
+   "image": "images/day03.png",
+   "animation": "lights",
+   "event": {
+    "type": "quiz",
+    "question": "In which country is the modern tradition of decorating Christmas trees known to have spread widely?",
+    "choices": [
+     "Germany",
+     "Brazil",
+     "Japan",
+     "Egypt"
+    ],
+    "answer": 0,
+    "success": "Right! It is known as a tradition that began in Germany. 🎄",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 4,
+   "title": "A Warm Wish",
+   "message": "A single little candle can warm an entire room.",
+   "story": "On an evening of heavy snow, the villagers placed a candle in every window. A traveler walking far away followed those lights and soon found himself in front of a house that smelled of warm soup.",
+   "image": "images/day04.png",
+   "animation": "sparkle",
+   "event": {
+    "type": "wish",
+    "prompt": "Write what you want to say to someone precious to you.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 5,
+   "title": "A Snowman's Day",
+   "message": "The snowman is standing there today, hat pulled down firmly again.",
+   "story": "Every morning the snowman greets the sky. 'Thank you for making it cold again today!' When the sun rises he worries a little, but hearing the children laugh warms his heart right away.",
+   "image": "images/day05.png",
+   "animation": "snowfall",
+   "event": {
+    "type": "catch",
+    "item": "snowflake",
+    "target": 6,
+    "seconds": 12,
+    "prompt": "Catch 6 snowflakes and gather them for the snowman!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 6,
+   "title": "Santa's First Story",
+   "message": "Today's gift is a piece of a story.",
+   "story": "The person who inspired Santa Claus is said to be Saint Nicholas of the 4th century. He was a kind man who secretly gave gifts to neighbors in need. As his name passed through many countries, it became 'Santa Claus'.",
+   "image": "images/day06.png",
+   "animation": "confetti",
+   "event": {
+    "type": "quiz",
+    "question": "Which saint is said to be the model for Santa Claus?",
+    "choices": [
+     "Saint Nicholas",
+     "Saint Paul",
+     "Saint George",
+     "Saint Mark"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 7,
+   "title": "The Light of the Little Cabin",
+   "message": "A lit window in the snow always looks warm.",
+   "story": "In the little cabin at the foot of the mountain, the fireplace was lit every evening. On blizzard nights, even a passing fox and a lost bird felt safe when they saw that light. A light that waits for someone may be the loveliest decoration of all.",
+   "image": "images/day07.png",
+   "animation": "lights",
+   "event": {
+    "type": "wish",
+    "prompt": "Write down what you were most thankful for this year.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 8,
+   "title": "Following the Sound of Bells",
+   "message": "Jingle jingle, a bell is ringing somewhere.",
+   "story": "At a winter dawn, sleigh bells rang from beyond a snowy hill. When I climbed up following the sound, no one was there, only footprints glittering. The bells seemed to say, 'Remember this moment.'",
+   "image": "images/day08.png",
+   "animation": "sparkle",
+   "event": {
+    "type": "catch",
+    "item": "bell",
+    "target": 5,
+    "seconds": 12,
+    "prompt": "Click the 5 ringing bells to catch them!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 9,
+   "title": "The Red-Nosed Friend",
+   "message": "The darker the road at night, the brighter a small light shines.",
+   "story": "On a foggy Christmas Eve, when everyone worried about losing their way, a reindeer with a glowing nose led the way. The very trait he was teased for ended up saving everyone.",
+   "image": "images/day09.png",
+   "animation": "confetti",
+   "event": {
+    "type": "quiz",
+    "question": "What is the name of the famous reindeer from the song whose nose glows red?",
+    "choices": [
+     "Rudolph",
+     "Dobby",
+     "Lightning",
+     "Starry"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 10,
+   "title": "The Wreath on the Door",
+   "message": "A round wreath is said to stand for 'endless love'.",
+   "story": "When you see a wreath on the front door, you know someone in the house is waiting for guests. Hang it with care, one pine cone and one ribbon at a time, and even the winter wind will pause to say hello.",
+   "image": "images/day10.png",
+   "animation": "stars",
+   "event": {
+    "type": "wish",
+    "prompt": "Write the name of someone you want to spend this winter with.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 11,
+   "title": "The Smell of Baking Cookies",
+   "message": "Happiness is slowly turning golden in the oven.",
+   "story": "The moment the gingerbread cookie came out of the oven, he thought, 'Whose gift will I be now?' Picturing himself in a child's hand with a bright smile made his crisp body a little sweeter.",
+   "image": "images/day11.png",
+   "animation": "confetti",
+   "event": {
+    "type": "catch",
+    "item": "candy",
+    "target": 6,
+    "seconds": 12,
+    "prompt": "Catch 6 candies and fill the cookie box!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 12,
+   "title": "Song of the Twelve Days",
+   "message": "Christmas doesn't end after a single day.",
+   "story": "In the traditional calendar, 'the Twelve Days of Christmas' is the festive period running from Christmas into the start of the new year. It is a way of slowly enjoying winter by sharing gifts and songs.",
+   "image": "images/day12.png",
+   "animation": "fireworks",
+   "event": {
+    "type": "quiz",
+    "question": "In tradition, 'the Twelve Days of Christmas' last how many days from Christmas?",
+    "choices": [
+     "12 days",
+     "3 days",
+     "24 days",
+     "40 days"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 13,
+   "title": "Snow Crystals",
+   "message": "Almost no two snowflakes have the same shape.",
+   "story": "People who looked at snowflakes under a microscope found that the hexagon takes endlessly different forms. That is why winter is like a museum that shows a different artwork every day.",
+   "image": "images/day13.png",
+   "animation": "snowfall",
+   "event": {
+    "type": "wish",
+    "prompt": "Write something new you want to try this year.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 14,
+   "title": "Shooting Star",
+   "message": "The time to make a wish is very short.",
+   "story": "They say that if you say a wish while a shooting star passes, it comes true. So some people prepare their wish in advance. Your wish only needs to be one short, warm sentence.",
+   "image": "images/day14.png",
+   "animation": "stars",
+   "event": {
+    "type": "catch",
+    "item": "star",
+    "target": 7,
+    "seconds": 12,
+    "prompt": "Catch 7 shooting stars and gather your wishes!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 15,
+   "title": "Under the Mistletoe",
+   "message": "One small plant makes a big greeting.",
+   "story": "Mistletoe stays green even in winter, so it has long been a symbol of good luck. In some countries there is a custom of greeting each other under the mistletoe. Try offering someone a warm hello first today.",
+   "image": "images/day15.png",
+   "animation": "lights",
+   "event": {
+    "type": "quiz",
+    "question": "In Western custom, what is the traditional thing to do under the mistletoe?",
+    "choices": [
+     "Kiss",
+     "Run",
+     "Sing",
+     "Wrestle"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 16,
+   "title": "A Single Candle",
+   "message": "A small flame quietly lights up a lot.",
+   "story": "On a night of power outage, when a child lit one candle, the shadows in the room slowly began to dance. The family sat around and brought out old stories one by one, and that day was remembered longer than any other year.",
+   "image": "images/day16.png",
+   "animation": "sparkle",
+   "event": {
+    "type": "wish",
+    "prompt": "Write down the warmest moment of your day.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 17,
+   "title": "The Snowman's Friend",
+   "message": "Even a snowman needs a friend.",
+   "story": "Worried that the snowman might be lonely, the children made him a little snow puppy. The puppy, with button eyes, pretended to wag its tail by the snowman's side all day long.",
+   "image": "images/day17.png",
+   "animation": "snowfall",
+   "event": {
+    "type": "catch",
+    "item": "snowflake",
+    "target": 8,
+    "seconds": 14,
+    "prompt": "Catch 8 snowflakes and make a snow puppy!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 18,
+   "title": "The First Card",
+   "message": "A whole heart fits on a single card.",
+   "story": "The first Christmas card is known to have been made in England in 1843. It was a small invention that let busy people share their feelings even when they couldn't visit in person.",
+   "image": "images/day18.png",
+   "animation": "confetti",
+   "event": {
+    "type": "quiz",
+    "question": "In which country is the world's first Christmas card known to have been made?",
+    "choices": [
+     "England",
+     "France",
+     "Australia",
+     "Canada"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 19,
+   "title": "The Light in the Window",
+   "message": "A window that waits for someone is warm.",
+   "story": "In the evening, the windows of the village light up one by one. Someone coming home feels relieved from afar, thinking 'I'm almost there.' How about being someone's light today?",
+   "image": "images/day19.png",
+   "animation": "lights",
+   "event": {
+    "type": "wish",
+    "prompt": "Write a word for someone you'd like to get in touch with today.",
+    "success": "Your wish was sent to the star ⭐"
+   }
+  },
+  {
+   "day": 20,
+   "title": "Ring the Bells",
+   "message": "The sound of bells travels far and wide.",
+   "story": "When the old bell in the village tower rang for the first time in ages, the birds in the winter forest took off all at once. As the sound crossed the snow to the distant mountains, people opened their doors and waved to each other.",
+   "image": "images/day20.png",
+   "animation": "fireworks",
+   "event": {
+    "type": "catch",
+    "item": "bell",
+    "target": 8,
+    "seconds": 14,
+    "prompt": "Catch 8 bells and complete the Christmas chime!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 21,
+   "title": "The Longest Night",
+   "message": "Today is the day with the longest night of the year.",
+   "story": "In the Northern Hemisphere, around the winter solstice the day is shortest and the night is longest. That's why people long ago lit fires and gathered together at this time to celebrate the return of the light.",
+   "image": "images/day21.png",
+   "animation": "stars",
+   "event": {
+    "type": "quiz",
+    "question": "What kind of day is the winter solstice (around December 21) in the Northern Hemisphere?",
+    "choices": [
+     "The day with the shortest daylight",
+     "The day with the longest daylight",
+     "A day when day and night are equally long",
+     "A day when it always snows"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 22,
+   "title": "A Gift in the Stocking",
+   "message": "The stocking is small, but the dreams are big.",
+   "story": "The stocking hung by the fireplace slowly swelled through the night. By morning it held candy, tangerines, and a little letter. The letter said, 'This year was fun because of you.'",
+   "image": "images/day22.png",
+   "animation": "confetti",
+   "event": {
+    "type": "catch",
+    "item": "gift",
+    "target": 8,
+    "seconds": 14,
+    "prompt": "Collect the 8 falling gifts in the stocking!",
+    "success": "You caught them all! ✨",
+    "fail": "Just a bit short. Try again!"
+   }
+  },
+  {
+   "day": 23,
+   "title": "Silent Night",
+   "message": "Tomorrow is Christmas Eve. Take a quiet rest today.",
+   "story": "'Silent Night' is said to have first been sung in 1818 in a small church in Austria. The famous story goes that the organ was broken, so it was accompanied by a single guitar. The humble sound is what lasted.",
+   "image": "images/day23.png",
+   "animation": "sparkle",
+   "event": {
+    "type": "quiz",
+    "question": "In which language were the lyrics of the carol 'Silent Night' first written?",
+    "choices": [
+     "German",
+     "English",
+     "French",
+     "Spanish"
+    ],
+    "answer": 0,
+    "success": "Correct! 🎉",
+    "fail": "Too bad! But you learned something, so that's okay."
+   }
+  },
+  {
+   "day": 24,
+   "title": "Christmas Eve",
+   "message": "Thank you for opening every box, all the way to the last one. Merry Christmas!",
+   "story": "For 24 days you have gathered small joys without missing a single day. Now it's time to send your last wish to the star. Tonight, rest with a warm heart among warm people. Merry Christmas!",
+   "image": "images/day24.png",
+   "animation": "fireworks",
+   "event": {
+    "type": "wish",
+    "prompt": "Write down what you want to say on Christmas Eve.",
+    "success": "Even your last wish was sent to the star 🌟 Merry Christmas!"
+   }
+  }
+ ]
+}

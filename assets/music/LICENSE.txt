@@ -1,0 +1,7 @@
+기본 제공 음악 라이선스 안내
+- Jingle Bells (James Lord Pierpont, 1857)
+- Silent Night (Franz Xaver Gruber, 1818)
+- We Wish You a Merry Christmas (전통 영국 캐럴)
+위 세 곡의 작곡은 모두 퍼블릭 도메인이다.
+음원은 tools/generate_default_music.py 로 직접 합성한 것이며, 제3자의 녹음을 사용하지 않는다.
+이 프로젝트에서 자유롭게 사용·배포할 수 있다.

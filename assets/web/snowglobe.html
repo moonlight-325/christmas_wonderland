@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>스노우볼</title>
+<style>
+html,body{margin:0;height:100%;background:radial-gradient(circle at 50% 30%,#1b2a4a,#0a1020);overflow:hidden;
+font-family:"Segoe UI","Malgun Gothic",sans-serif;color:#fff;user-select:none}
+#wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}
+canvas{cursor:pointer}
+button{margin-top:10px;padding:8px 24px;border:0;border-radius:18px;background:#c0392b;color:#fff;font-size:15px;cursor:pointer}
+button:hover{background:#e74c3c}.hint{opacity:.65;font-size:12px;margin-top:8px}
+</style></head><body><div id="wrap">
+<canvas id="c" width="320" height="340"></canvas>
+<button id="shake">⛄ 흔들기</button><div class="hint">유리구를 클릭해도 흔들려요</div></div>
+<script>
+const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+const CX=160,CY=150,R=130,FLOOR=252;
+const flakes=Array.from({length:170},()=>({x:CX+(Math.random()-.5)*150,y:FLOOR-Math.random()*8,vx:0,vy:0,r:1+Math.random()*2.2}));
+function shake(){for(const f of flakes){f.vx=(Math.random()-.5)*10;f.vy=-3-Math.random()*8;}}
+function step(){
+  for(const f of flakes){
+    f.vy+=0.07; f.vx*=0.985; f.vy*=0.985;
+    f.x+=f.vx+Math.sin((f.y+f.x)*0.05)*0.25; f.y+=f.vy;
+    if(f.y>FLOOR){f.y=FLOOR-Math.random()*5;f.vy=0;f.vx*=0.5;}
+    const dx=f.x-CX,dy=f.y-CY,d=Math.hypot(dx,dy);
+    if(d>R-6){const k=(R-6)/d;f.x=CX+dx*k;f.y=CY+dy*k;f.vx*=-0.4;f.vy*=-0.4;}
+  }
+}
+function tree(x,y,s){
+  ctx.fillStyle='#5b3a1e';ctx.fillRect(x-4*s,y,8*s,14*s);
+  ctx.fillStyle='#1e7d3c';
+  for(let i=0;i<3;i++){const w=(34-i*7)*s,t=y-(i*26)*s;ctx.beginPath();ctx.moveTo(x,t-34*s);ctx.lineTo(x-w,t+4*s);ctx.lineTo(x+w,t+4*s);ctx.closePath();ctx.fill();}
+  ctx.fillStyle='#ffd34d';ctx.beginPath();ctx.arc(x,y-86*s,5*s,0,6.3);ctx.fill();
+  ['#e74c3c','#3498db','#f1c40f','#e67e22'].forEach((c,i)=>{ctx.fillStyle=c;ctx.beginPath();ctx.arc(x+(i%2?14:-14)*s,y-(14+i*14)*s,3*s,0,6.3);ctx.fill();});
+}
+function draw(){
+  ctx.clearRect(0,0,320,340);
+  ctx.save();ctx.beginPath();ctx.arc(CX,CY,R,0,6.3);ctx.clip();
+  const g=ctx.createLinearGradient(0,0,0,300);g.addColorStop(0,'#27406f');g.addColorStop(1,'#122244');
+  ctx.fillStyle=g;ctx.fillRect(0,0,320,340);
+  ctx.fillStyle='#f4f8ff';ctx.beginPath();ctx.ellipse(CX,FLOOR+18,R,34,0,0,6.3);ctx.fill();
+  tree(CX,FLOOR-8,1.05);
+  ctx.fillStyle='rgba(255,255,255,.95)';
+  for(const f of flakes){ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,6.3);ctx.fill();}
+  ctx.restore();
+  ctx.strokeStyle='rgba(255,255,255,.45)';ctx.lineWidth=3;ctx.beginPath();ctx.arc(CX,CY,R,0,6.3);ctx.stroke();
+  ctx.strokeStyle='rgba(255,255,255,.35)';ctx.lineWidth=5;ctx.beginPath();ctx.arc(CX,CY,R-14,3.6,4.4);ctx.stroke();
+  ctx.fillStyle='#7a4b22';ctx.beginPath();ctx.roundRect(CX-100,262,200,64,12);ctx.fill();
+  ctx.fillStyle='#e8c15a';ctx.font='bold 17px "Segoe UI","Malgun Gothic"';ctx.textAlign='center';ctx.fillText('Merry Christmas',CX,300);
+}
+function loop(){step();draw();requestAnimationFrame(loop);}
+document.getElementById('shake').onclick=shake;cv.onclick=shake;shake();loop();
+</script></body></html>
