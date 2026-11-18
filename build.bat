@@ -2,9 +2,9 @@
 REM Build with PyInstaller (onedir). Output: dist\ChristmasWonderland\ChristmasWonderland.exe
 REM Run this script on Windows. PyInstaller cannot build Windows executables on other operating systems.
 
-python -m pip install -r requirements.txt pyinstaller
+py -m pip install -r requirements.txt PyInstaller
 
-pyinstaller --noconfirm --clean --windowed --name ChristmasWonderland ^
+py -m pyinstaller --noconfirm --clean --windowed --name ChristmasWonderland ^
   --icon assets\icon.ico ^
   --add-data "assets;assets" ^
   main.py
